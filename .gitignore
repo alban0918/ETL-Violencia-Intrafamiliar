@@ -1,0 +1,60 @@
+# Variables de entorno — NUNCA subir credenciales
+.env
+
+# Datos pesados
+data/raw/01_violencia_raw_limpia.csv
+*.csv
+!data/raw/02_dane_ipm_long.csv
+!data/raw/03_api_divipola.csv
+!data/final/04_dataset_final_enriquecido.csv
+
+# Archivos Excel descargados
+*.xlsx
+*.xls
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+.env/
+
+# Airflow
+airflow.db
+airflow.cfg
+airflow-webserver.pid
+standalone_admin_password.txt
+logs/
+!logs/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Great Expectations
+great_expectations/uncommitted/
+great_expectations/.ge_store_backend_id
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Reportes
+*.html
